@@ -1,0 +1,151 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #3b82f6);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container */
+.container {
+  max-width: 480px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* Judul */
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+/* Label */
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="tel"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.4);
+}
+
+/* Button umum */
+button {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* Tombol tambah */
+.add-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #3b82f6, #1d4ed8);
+  color: white;
+  margin-top: 8px;
+}
+
+/* Contact List */
+.contact-list {
+  margin-top: 30px;
+}
+
+.contact-list h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+/* Item kontak */
+.contact-item {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f1f5f9;
+  font-size: 5px;
+}
+
+/* Grup tombol */
+.btn-group {
+  display: flex;
+  gap: 6px;
+}
+
+/* Tombol Edit dan Delete */
+.edit-btn,
+.delete-btn {
+  padding: 4px 3px;
+  border-radius: 4px;
+  font-size: 8px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.edit-btn {
+  background-color: #facc15;
+  color: #1e293b;
+}
+
+.edit-btn:hover {
+  background-color: #eab308;
+}
+
+.delete-btn {
+  background-color: #ef4444;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #dc2626;
+}
